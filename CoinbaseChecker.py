@@ -458,7 +458,7 @@ def main():
         
         # Convert ntime to human-readable timestamp
         ntime_int = int(result['ntime'], 16)
-        ntime_date = datetime.utcfromtimestamp(ntime_int).strftime('%Y-%m-%d %H:%M:%S UTC')
+        ntime_date = datetime.fromtimestamp(ntime_int).strftime('%Y-%m-%d %H:%M:%S UTC')
         print(f"Timestamp (nTime): {result['ntime']} ({ntime_date})")
         
         print(f"Clean Jobs:       {result['clean_jobs']}")
