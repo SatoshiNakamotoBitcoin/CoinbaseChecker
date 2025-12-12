@@ -450,18 +450,18 @@ def main():
         print("=" * 70)
         print("STRATUM MINING.NOTIFY PARSED DATA")
         print("=" * 70)
-        print(f"Job ID:           {result['job_id']}")
-        print(f"Block Height:     {result['height'] if result['height'] else 'Unable to extract'}")
-        print(f"Previous Hash:    {result['prevhash']}")
-        print(f"Block Version:    {result['version']}")
+        print(f"Job ID:             {result['job_id']}")
+        print(f"Block Height:       {result['height'] if result['height'] else 'Unable to extract'}")
+        print(f"Previous Hash:      {result['prevhash']}")
+        print(f"Block Version:      {result['version']}")
         print(f"Difficulty (nBits): {result['nbits']}")
         
         # Convert ntime to human-readable timestamp
         ntime_int = int(result['ntime'], 16)
         ntime_date = datetime.fromtimestamp(ntime_int).strftime('%Y-%m-%d %H:%M:%S UTC')
-        print(f"Timestamp (nTime): {result['ntime']} ({ntime_date})")
+        print(f"Timestamp (nTime):  {result['ntime']} ({ntime_date})")
         
-        print(f"Clean Jobs:       {result['clean_jobs']}")
+        print(f"Clean Jobs:         {result['clean_jobs']}")
         
         # Display coinbase outputs and addresses
         if result.get('outputs'):
