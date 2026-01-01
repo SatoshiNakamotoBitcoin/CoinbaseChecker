@@ -428,13 +428,12 @@ def main():
         input_str = sys.argv[1]
     else:
         # Read from stdin
-        print("=" * 70)
         print("Enter/Paste Stratum mining.notify JSON (or Ctrl+D to exit):")
         print("=" * 70)
         print("Examples format: {\"method\":\"mining.notify\",\"params\":[...]}")
         print("=" * 70)
         print("Examples format: {\"params\":[...],\"method\":\"mining.notify\"}")
-        print("=" * 70)
+        print()
         input_str = sys.stdin.read().strip()
     
     if not input_str:
