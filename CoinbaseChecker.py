@@ -429,7 +429,7 @@ def main():
     else:
         # Read from stdin
         print("Enter/Paste Stratum mining.notify JSON (or Ctrl+D to exit):")
-        print("=" * 70)
+        print()
         print("Examples format: {\"method\":\"mining.notify\",\"params\":[...]}")
         print("=" * 70)
         print("Examples format: {\"params\":[...],\"method\":\"mining.notify\"}")
