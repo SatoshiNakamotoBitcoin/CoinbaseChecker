@@ -468,7 +468,7 @@ def main():
         
         # Display coinbase outputs and addresses
         if result.get('outputs'):
-            print()
+            print("=" * 70)
             print("Coinbase Outputs:")
             for i, output in enumerate(result['outputs'], 1):
                 print(f"  Output {i}:")
