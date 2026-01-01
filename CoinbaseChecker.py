@@ -436,9 +436,9 @@ def main():
     if not input_str:
         print("Error: No input provided", file=sys.stderr)
         print("\nUsage:")
-        print("  python stratum_parser.py '<json_string>'")
+        print("  python3 CoinbaseChecker.py '<json_string>'")
         print("  or")
-        print("  echo '<json_string>' | python stratum_parser.py")
+        print("  echo '<json_string>' | python3 CoinbaseChecker.py")
         sys.exit(1)
     
     try:
